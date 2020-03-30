@@ -1,5 +1,4 @@
 const dirObj = require('../prompts/dirObj');
-const storeList = require('../prompts/storeList');
 
 module.exports = {
     description: 'New npm project skelet',
@@ -9,13 +8,23 @@ module.exports = {
             message: 'Project name',
             type: 'input',
         },
-        storeList,
+        {
+            name: 'version',
+            message: 'Project version (1.0.0)',
+            default: '1.0.0',
+            type: 'input',
+        },
+        {
+            name: 'description',
+            message: 'Project description',
+            type: 'input',
+        },
         dirObj,
     ],
     actions: [{
         type: 'addMany',
-        base: 'frontend/__plop__/templates/component/statefulWithMobx/',
-        destination: 'frontend/src/{{dir}}/{{name}}/',
-        templateFiles: 'frontend/__plop__/templates/component/statefulWithMobx/*',
+        base: '.plop/templates/project/',
+        destination: '{{dir}}/{{name}}/',
+        templateFiles: '.plop/templates/project/*',
     }],
 };

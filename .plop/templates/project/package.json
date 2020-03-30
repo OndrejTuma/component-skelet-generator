@@ -1,0 +1,34 @@
+{
+  "name": "@rootre/{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib/ styles.css*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --config config/webpack.config.dev.js",
+    "build": "yarn clean && yarn build:lib",
+    "build:lib": "cross-env NODE_ENV=production webpack --mode production --config config/webpack.config.js",
+    "build:dev": "cross-env NODE_ENV=production webpack --mode production --config config/webpack.config.dev.js",
+    "prepublishOnly": "yarn build && yarn publish:demo",
+    "deploy": "gh-pages -d examples/dist",
+    "publish:demo": "yarn build:dev && yarn deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rootre/{{name}}.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "dropdown",
+    "selectbox",
+    "react-hooks"
+  ],
+  "author": "Ondřej Tůma <ondr@centrum.cz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rootre/{{name}}/issues"
+  },
+  "homepage": "https://github.com/Rootre/{{name}}#readme"
+}
