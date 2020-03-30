@@ -1,7 +1,7 @@
 module.exports = {
     name: 'dir',
     type: 'list',
-    message: 'Select location',
+    message: 'Location',
     choices: [
         {
             name: 'Projects folder',

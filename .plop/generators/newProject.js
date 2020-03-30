@@ -10,7 +10,7 @@ module.exports = {
         },
         {
             name: 'version',
-            message: 'Project version (1.0.0)',
+            message: 'Project version',
             default: '1.0.0',
             type: 'input',
         },
@@ -21,10 +21,15 @@ module.exports = {
         },
         dirObj,
     ],
-    actions: [{
-        type: 'addMany',
-        base: '.plop/templates/project/',
-        destination: '{{dir}}/{{name}}/',
-        templateFiles: '.plop/templates/project/*',
-    }],
+    actions: [
+        {
+            type: 'addMany',
+            base: '.plop/templates/project/',
+            destination: '{{dir}}/{{name}}/',
+            templateFiles: '.plop/templates/project/**/*',
+            globOptions: {
+                dot: true,
+            },
+        },
+    ],
 };

@@ -5,7 +5,7 @@ import Component from '../../src';
 
 function App() {
     return (
-        <div style={{maxWidth: 500, margin: '50px auto'}}>
+        <div>
             <h1>{{name}} component demo</h1>
 
             <Component/>
