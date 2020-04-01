@@ -1,5 +1,5 @@
 {
-  "name": "@rootre/{{name}}",
+  "name": "{{npmNamespace}}/{{name}}",
   "version": "{{version}}",
   "description": "{{description}}",
   "main": "lib/index.js",
@@ -16,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rootre/{{name}}.git"
+    "url": "git+https://github.com/{{githubUser}}/{{name}}.git"
   },
   "keywords": [
     "react",
     "react-component"
   ],
-  "author": "Ondřej Tůma <ondr@centrum.cz>",
+  "author": "{{gitUser}}",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rootre/{{name}}/issues"
+    "url": "https://github.com/{{githubUser}}/{{name}}/issues"
   },
-  "homepage": "https://github.com/Rootre/{{name}}#readme"
+  "homepage": "https://github.com/{{githubUser}}/{{name}}#readme"
 }

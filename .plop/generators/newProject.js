@@ -23,6 +23,11 @@ module.exports = {
     ],
     actions: [
         {
+            data: {
+                githubUser: process.env.GITHUB_USER,
+                npmNamespace: process.env.NPM_NAMESPACE,
+                gitUser: process.env.GIT_USER,
+            },
             type: 'addMany',
             base: '.plop/templates/project/',
             destination: '{{dir}}/{{name}}/',

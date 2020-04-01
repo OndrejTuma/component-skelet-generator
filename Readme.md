@@ -5,7 +5,7 @@ skeleton of new npm project
 
 ## Usage
 
-Set projects directory in `.env`
+Set config variables in `.env`
 
 Run:
 
