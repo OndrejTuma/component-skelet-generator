@@ -1,4 +1,7 @@
 const Handlebars = require('handlebars');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const newProject = require('./.plop/generators/newProject');
 

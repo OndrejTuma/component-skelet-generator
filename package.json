@@ -4,12 +4,13 @@
   "description": "Plop generator of template skeleton for npm projects",
   "main": "plopfile.js",
   "scripts": {
-    "generate": "plop",
+    "start": "plop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "handlebars": "^4.7.3",
     "plop": "^2.6.0"
   }

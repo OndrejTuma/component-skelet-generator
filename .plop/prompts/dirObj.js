@@ -1,3 +1,5 @@
+const projectsDir = process.env.PROJECTS_DIR;
+
 module.exports = {
     name: 'dir',
     type: 'list',
@@ -5,11 +7,11 @@ module.exports = {
     choices: [
         {
             name: 'Projects folder',
-            value: 'projects',
+            value: projectsDir,
         },
         {
             name: 'Forms group',
-            value: 'projects/forms',
+            value: `${projectsDir}/forms`,
         },
     ],
 };

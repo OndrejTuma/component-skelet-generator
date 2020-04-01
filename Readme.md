@@ -5,12 +5,14 @@ skeleton of new npm project
 
 ## Usage
 
+Set projects directory in `.env`
+
 Run:
 
-> yarn generate
+> yarn start
 
 Or:
 
-> npm run generate
+> npm run start
 
 Then follow instructions
